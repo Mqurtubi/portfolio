@@ -1,0 +1,91 @@
+@import "tailwindcss";
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+
+@keyframes typing1 {
+    0% {
+      width: 0%;
+      visibility: hidden;
+    }
+    100% {
+      width: 100%;
+      border-color: transparent;
+    }
+  }
+  @keyframes typing2 {
+    0% {
+      width: 0%;
+      visibility: hidden;
+    }
+    100% {
+      width: 100%;
+      border-color: transparent;
+    }
+  }
+  @keyframes typing3 {
+    0% {
+      width: 0%;
+      visibility: hidden;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+    100% {
+      border-color: white;
+    }
+  }
+  
+  .typing-text1 {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid white;
+    animation: typing1 2s steps(10) forwards, blink .5s 1;
+  }
+  .typing-text2 {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid white;
+    animation: typing2 2s steps(19) forwards, blink .5s 1;
+  }
+  .typing-text3 {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid white;
+    animation: typing3 2s steps(13) forwards, blink .5s infinite;
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    -webkit-animation: fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation: fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+  .slide-in-left {
+    -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  

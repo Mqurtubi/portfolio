@@ -1,0 +1,6 @@
+.custom-zoom [data-rmiz-modal-overlay="hidden"] {
+    background-color: rgb(38, 38, 38, 0);
+  }
+  .custom-zoom [data-rmiz-modal-overlay="visible"] {
+    background-color: rgb(38, 38, 38, 1);
+  }
