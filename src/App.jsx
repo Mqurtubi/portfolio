@@ -9,7 +9,7 @@ function App() {
   const [count, setCount] = useState(0)
   
   return (
-    <div className='bg-neutral-800'>
+    <div className='bg-neutral-800 light:bg-gray-200'>
       <Navbar/>
       <Home/>
       <About/>

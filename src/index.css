@@ -2,6 +2,7 @@
 @import "flowbite/src/themes/default";
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
+@custom-variant light (&:where(.light, .light *));
 
 @keyframes typing1 {
     0% {
@@ -57,6 +58,24 @@
     white-space: nowrap;
     overflow: hidden;
     border-right: 4px solid white;
+    animation: typing3 2s steps(13) forwards, blink .5s infinite;
+  }
+  .typing-text1-light {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid black;
+    animation: typing1 2s steps(10) forwards, blink .5s 1;
+  }
+  .typing-text2-light {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid black;
+    animation: typing2 2s steps(19) forwards, blink .5s 1;
+  }
+  .typing-text3-light {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid black;
     animation: typing3 2s steps(13) forwards, blink .5s infinite;
   }
   @keyframes fade-in {

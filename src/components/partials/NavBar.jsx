@@ -3,6 +3,7 @@ import { objNavbar } from "../../utils/linkNavbar"
 import Headroom from "react-headroom"
 import Hamburger from "hamburger-react"
 import { useState } from "react"
+import ButtonToggle from "./ButtonToggle"
 export default function Navbar(){
     const Links= objNavbar.map((link)=>{
         return <Menu {...link}/>
@@ -11,16 +12,17 @@ export default function Navbar(){
     const sectionId=objNavbar.map((link)=>link.link)
     return(
         <div>
-            <Headroom className="bg-neutral-800 w-full ">
-            <ul
-            className="text-neutral-400 text-lg flex justify-center z-100 bg-neutral-800 max-sm:hidden md:flex"
-            items={sectionId}>
+            <Headroom className="bg-neutral-800 w-full light:bg-neutral-200">
+                <ul
+                className="text-neutral-400 light:text-neutral-800 text-lg flex justify-center z-100 bg-neutral-800 light:bg-neutral-200 max-sm:hidden md:flex"
+                items={sectionId}>
                 {Links}
-            </ul>
-        </Headroom>
-        <div className="hidden max-sm:flex ml-4">
+                <ButtonToggle/>
+                </ul>
+            </Headroom>
+            <div className="hidden max-sm:flex ml-4">
                 <Hamburger color="white" toggled={isOpen} toggle={setOpen}/>
-        </div> 
+            </div> 
         {
             isOpen && (
                 <div className="w-xs h-screen bg-neutral-700 fixed z-50 top-0 sm:hidden">

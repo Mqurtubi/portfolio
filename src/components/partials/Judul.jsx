@@ -1,5 +1,5 @@
 export default function Judul({judul}){
     return(
-        <p className="text-4xl/loose text-white font-bold text-center">{judul}</p>
+        <p className="text-4xl/loose text-white font-bold text-center light:text-neutral-800">{judul}</p>
     )
 }

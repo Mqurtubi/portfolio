@@ -16,7 +16,7 @@ export default function SKill({value,icon:Icon,text}){
             })} 
             />
             <div className="absolute inset-0 flex items-center justify-center">
-                <Icon className="text-white text-4xl" />
+                <Icon className="text-white text-4xl light:text-neutral-800" />
             </div>
         </div>
     </div>

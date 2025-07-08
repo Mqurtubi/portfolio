@@ -23,7 +23,7 @@ export default function About(){
                         </div>
                 </div>
                 <div id="right" className="w-md max-sm:w-xs " data-aos="fade-left">
-                    <p className="text-xl/relaxed text-justify text-white">I am an Informatics student at Gunadarma University with a focus on web development. I have experience in organizational activities, which has equipped me with strong teamwork skills. I am highly enthusiastic about continuously learning and developing myself in the field of technology. I am particularly interested in becoming a professional web developer and am eager to deepen my skills in creating modern, user-friendly, and responsive web applications.</p>
+                    <p className="text-xl/relaxed text-justify text-white light:text-neutral-800">I am an Informatics student at Gunadarma University with a focus on web development. I have experience in organizational activities, which has equipped me with strong teamwork skills. I am highly enthusiastic about continuously learning and developing myself in the field of technology. I am particularly interested in becoming a professional web developer and am eager to deepen my skills in creating modern, user-friendly, and responsive web applications.</p>
                     <ButtonDownload/>
                 </div>
             </div>
