@@ -2,7 +2,7 @@ import { FaSun, FaMoon } from "react-icons/fa";
 import { useState, useEffect } from "react";
 export default function ButtonToggle(){
     const [theme,setTheme]=useState(()=>{
-        return localStorage.getItem("theme") || "light"
+        return localStorage.getItem("theme") || "dark"
     })
     useEffect(()=>{
         document.documentElement.className=theme
