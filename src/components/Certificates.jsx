@@ -11,7 +11,7 @@ export default function Certificates(){
         Aos.init()
     },[])
     return(
-        <div className="" id="certificate">
+        <div className="mb-10" id="certificate">
             <div id="header" data-aos="fade-down">
             <Judul judul="Certificate"/>
             </div>

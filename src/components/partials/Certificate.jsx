@@ -9,9 +9,6 @@ export default function Certificate({image,deskripsi}){
                 <img src={image} alt="" srcset="" />
                 </Zoom>
             </div>
-            <div className="text-xl px-8 py-3">
-                <p>{deskripsi}</p>
-            </div>
         </div>
     )
 }
