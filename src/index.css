@@ -4,107 +4,51 @@
 @source "../node_modules/flowbite";
 @custom-variant light (&:where(.light, .light *));
 
-@keyframes typing1 {
-    0% {
-      width: 0%;
-      visibility: hidden;
-    }
-    100% {
-      width: 100%;
-      border-color: transparent;
-    }
+@keyframes fade-in {
+  0% {
+    opacity: 0;
   }
-  @keyframes typing2 {
-    0% {
-      width: 0%;
-      visibility: hidden;
-    }
-    100% {
-      width: 100%;
-      border-color: transparent;
-    }
+  100% {
+    opacity: 1;
   }
-  @keyframes typing3 {
-    0% {
-      width: 0%;
-      visibility: hidden;
-    }
-    100% {
-      width: 100%;
-    }
+}
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
   }
-  @keyframes blink {
-    50% {
-      border-color: transparent;
-    }
-    100% {
-      border-color: white;
-    }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
   }
-  
-  .typing-text1 {
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 4px solid white;
-    animation: typing1 2s steps(10) forwards, blink .5s 1;
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
   }
-  .typing-text2 {
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 4px solid white;
-    animation: typing2 2s steps(19) forwards, blink .5s 1;
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
   }
-  .typing-text3 {
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 4px solid white;
-    animation: typing3 2s steps(13) forwards, blink .5s infinite;
-  }
-  .typing-text1-light {
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 4px solid black;
-    animation: typing1 2s steps(10) forwards, blink .5s 1;
-  }
-  .typing-text2-light {
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 4px solid black;
-    animation: typing2 2s steps(19) forwards, blink .5s 1;
-  }
-  .typing-text3-light {
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 4px solid black;
-    animation: typing3 2s steps(13) forwards, blink .5s infinite;
-  }
-  @keyframes fade-in {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  @keyframes slide-in-left {
-    0% {
-      -webkit-transform: translateX(-1000px);
-              transform: translateX(-1000px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  
-  .fade-in {
-    -webkit-animation: fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-            animation: fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-  }
-  .slide-in-left {
-    -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-            animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  }
-  
+}
+
+.fade-in {
+  -webkit-animation: fade-in 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+.slide-in-left {
+  -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.slide-in-right {
+  -webkit-animation: slide-in-rigth 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
